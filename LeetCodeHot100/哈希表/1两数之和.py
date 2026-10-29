@@ -1,5 +1,5 @@
+# 用一个哈希表存遍历过的值和对应index，供后面的查前面有没有刚好是我差的值target-nums[i]
 class Solution:
-
     # def twoSum(self, nums: list[int], target: int) -> list[int]:
     #     """
     #     暴力解法
