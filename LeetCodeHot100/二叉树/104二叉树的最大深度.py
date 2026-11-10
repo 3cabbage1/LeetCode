@@ -4,10 +4,12 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def maxDepth(self, root: TreeNode | None) -> int:
-        queue=[]
-        result=0
+        queue = []
+        result = 0
         if not root:
             return 0
         queue.append(root)
@@ -19,7 +21,7 @@ class Solution:
                     queue.append(node.left)
                 if node.right:
                     queue.append(node.right)
-            result+=1
+            result += 1
         return result
 
 
