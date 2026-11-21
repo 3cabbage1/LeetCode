@@ -4,15 +4,15 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
     def show(self):
-        queue=[]
+        queue = []
         queue.append(self)
         while queue:
-            size=len(queue)
-
+            size = len(queue)
             for i in range(size):
                 cur = queue.pop(0)
-                print(cur.val,end=" ")
+                print(cur.val, end=" ")
                 if cur.left:
                     queue.append(cur.left)
                 if cur.right:
@@ -44,10 +44,11 @@ class Solution:
                 in_right = inorder[i + 1:]
                 pre_left = preorder[1:i + 1]
                 pre_right = preorder[i + 1:]
-        root.left =self.buildTree(pre_left, in_left)
-        root.right =self.buildTree(pre_right, in_right)
+        root.left = self.buildTree(pre_left, in_left)
+        root.right = self.buildTree(pre_right, in_right)
         return root
+
 
 if __name__ == '__main__':
     s = Solution()
-    s.buildTree([1,2], [2,1]).show()
+    s.buildTree([1, 2], [2, 1]).show()
