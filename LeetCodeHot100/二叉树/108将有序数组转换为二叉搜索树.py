@@ -4,7 +4,7 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-        
+
 
 # 我的，有点像二分，找中间的做当前root，然后递归不断分左右子树
 class Solution:
