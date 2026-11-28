@@ -10,7 +10,7 @@ class Solution:
         return True
 
     # 根据代码随想录的顺一下逻辑：
-    # aab：按切割位置1，2，3：a|ab、aa|b、aab|
+    # aab：按切割位置1,2,3：a|ab、aa|b、aab|
     # 再切子串
     def backtracking(self, s):
         if not s:
